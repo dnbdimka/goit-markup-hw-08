@@ -1,16 +1,38 @@
 .section {
-  padding: 94px 0;
-  &_bottom-padding {
-    padding-top: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &_bottom-padding {
+      padding-top: 0;
+    }
   }
 }
 .section-title {
-  margin-bottom: 50px;
+  @media screen and (min-width: 320px) {
+    margin-bottom: 30px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.666;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $titleColor;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.66;
+  }
+  // margin-bottom: 50px;
+
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.666;
+  // text-align: center;
+  // letter-spacing: 0.03em;
+  // color: $titleColor;
 }

@@ -21,6 +21,15 @@
   align-items: center;
 }
 .header__nav-list {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+
   margin-left: 95px;
 }
 .nav-list__item {
@@ -61,6 +70,15 @@
 
 /*------------------ header contacts ------------------*/
 .header__contacts-list {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+
   display: flex;
   margin-left: auto;
 }
