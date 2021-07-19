@@ -100,16 +100,16 @@
             </ul>
             <ul class="menu-social">
               <li class="menu-social__item">
-                <a href="" class="menu-social_link">Instagram</a>
+                <a href="" class="menu-social__link">Instagram</a>
               </li>
               <li class="menu-social__item">
-                <a href="" class="menu-social_link">Twitter</a>
+                <a href="" class="menu-social__link">Twitter</a>
               </li>
               <li class="menu-social__item">
-                <a href="" class="menu-social_link">Facebook</a>
+                <a href="" class="menu-social__link">Facebook</a>
               </li>
               <li class="menu-social__item">
-                <a href="" class="menu-social_link">LinkedIn</a>
+                <a href="" class="menu-social__link">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -166,6 +166,7 @@
         </div>
       </section>
       <!-- work section -->
+
       <section class="work section section_bottom-padding">
         <div class="container">
           <h2 class="work__title section-title">Чем мы занимаемся</h2>
@@ -175,9 +176,9 @@
                 Десктопные приложения
               </div>
               <img
-                src="./images/box-1.jpg"
+                srcset="./images/work/box1-2x.jpg 2x, ./images/work/box1.jpg 1x"
+                src="./images/work/box1.jpg"
                 alt="Програмирование сложных приложений"
-                width="370"
               />
             </li>
             <li class="work__item">
@@ -185,16 +186,18 @@
                 Мобильные приложения
               </div>
               <img
-                src="./images/box-2.jpg"
-                alt="Разработка мобильных приложений"
-                width="370"
+                srcset="./images/work/box2-2x.jpg 2x, ./images/work/box2.jpg 1x"
+                src="./images/work/box2.jpg"
               />
             </li>
             <li class="work__item">
               <div class="work__overlay work__overlay_color_dark">
                 Дизайнерские решения
               </div>
-              <img src="./images/box-3.jpg" alt="Дизайн" width="370" />
+              <img
+                srcset="./images/work/box3-2x.jpg 2x, ./images/work/box3.jpg 1x"
+                src="./images/work/box3.jpg"
+              />
             </li>
           </ul>
         </div>
@@ -205,11 +208,35 @@
           <h2 class="team__title section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item member-cart">
-              <img
-                src="./images/img-3.jpg"
-                alt="На фото Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-member-1-2x-desc.jpg 2x,
+                    ./images/team/team-member-1-desc.jpg    1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-member-1-2x-tab.jpg 2x,
+                    ./images/team/team-member-1-tab.jpg    1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-member-1-2x-mob.jpg 2x,
+                    ./images/team/team-member-1-mob.jpg    1x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-member-1-mob.jpg"
+                  alt="На фото Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="member-cart__text">
                 <h3 class="member-cart__name">Игорь Демьяненко</h3>
                 <p class="member-cart__paragraph">Product Designer</p>
@@ -246,11 +273,35 @@
               </div>
             </li>
             <li class="team__item member-cart">
-              <img
-                src="./images/img-2.jpg"
-                alt="На фото Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-member-2-2x-desc.jpg 2x,
+                    ./images/team/team-member-2-desc.jpg    1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-member-2-2x-tab.jpg 2x,
+                    ./images/team/team-member-2-tab.jpg    1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-member-2-2x-mob.jpg 2x,
+                    ./images/team/team-member-2-mob.jpg    1x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-member-2-mob.jpg"
+                  alt="На фото Ольга Репина"
+                />
+              </picture>
+
               <div class="member-cart__text">
                 <h3 class="member-cart__name">Ольга Репина</h3>
                 <p class="member-cart__paragraph">Frontend Developer</p>
@@ -287,11 +338,35 @@
               </div>
             </li>
             <li class="team__item member-cart">
-              <img
-                src="./images/img-1.jpg"
-                alt="На фото Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-member-3-2x-desc.jpg 2x,
+                    ./images/team/team-member-3-desc.jpg    1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-member-3-2x-tab.jpg 2x,
+                    ./images/team/team-member-3-tab.jpg    1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-member-3-2x-mob.jpg 2x,
+                    ./images/team/team-member-3-mob.jpg    1x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-member-3-mob.jpg"
+                  alt="На фото Николай Тарасов"
+                />
+              </picture>
+
               <div class="member-cart__text">
                 <h3 class="member-cart__name">Николай Тарасов</h3>
                 <p class="member-cart__paragraph">Marketing</p>
@@ -328,11 +403,35 @@
               </div>
             </li>
             <li class="team__item member-cart">
-              <img
-                src="./images/img.jpg"
-                alt="На фото Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-member-4-2x-desc.jpg 2x,
+                    ./images/team/team-member-4-desc.jpg    1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-member-4-2x-tab.jpg 2x,
+                    ./images/team/team-member-4-tab.jpg    1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-member-4-2x-mob.jpg 2x,
+                    ./images/team/team-member-4-mob.jpg    1x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-member-4-mob.jpg"
+                  alt="На фото Михаил Ермаков"
+                />
+              </picture>
+
               <div class="member-cart__text">
                 <h3 class="member-cart__name">Михаил Ермаков</h3>
                 <p class="member-cart__paragraph">UI Designer</p>
