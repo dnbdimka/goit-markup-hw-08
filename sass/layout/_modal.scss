@@ -103,14 +103,6 @@
   &__label {
     display: block;
     margin-bottom: 4px;
-
-    &:hover,
-    &:focus {
-      color: $brandColor;
-    }
-    // .modal-form__input:focus + .modal-form__field > & {
-    //   color: aquamarine;
-    // }
   }
   &__input-wrapper {
     position: relative;
