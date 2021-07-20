@@ -104,8 +104,12 @@
     display: block;
     margin-bottom: 4px;
 
-    // .modal-form__input:focus & {
-    //   color: #fff;
+    &:hover,
+    &:focus {
+      color: $brandColor;
+    }
+    // .modal-form__input:focus + .modal-form__field > & {
+    //   color: aquamarine;
     // }
   }
   &__input-wrapper {
@@ -122,7 +126,7 @@
     fill: #000000;
     transition: fill $animationTime $timingFunction;
 
-    .modal-form__input:focus + & {
+    .modal-form__input:focus ~ & {
       fill: $brandColor;
     }
   }
