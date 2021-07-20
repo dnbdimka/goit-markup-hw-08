@@ -68,6 +68,8 @@
     display: flex;
     align-items: center;
 
+    width: 100%;
+
     margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
@@ -143,6 +145,14 @@
   }
 }
 // ------------------------------------------HEADER CONTACTS
+@media screen and (min-width: 768px) {
+  .header-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}
+
 .header__contacts-list {
   @media screen and (max-width: 767px) {
     display: flex;
@@ -153,6 +163,9 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
   }
 }
 
@@ -166,6 +179,10 @@
 
     color: #757575;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
   &:last-child {
     @media screen and (max-width: 767px) {
       font-size: 34px;
@@ -174,8 +191,15 @@
 
       color: $brandColor;
     }
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 400px) {
       font-size: 26px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 30px;
     }
   }
   &:not(:last-child) {
@@ -246,6 +270,6 @@
 
   color: $brandColor;
   @media screen and (max-width: 440px) {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
